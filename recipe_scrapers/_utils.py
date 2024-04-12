@@ -269,3 +269,7 @@ def change_keys(obj, convert):
         return cls(change_keys(item, convert) for item in obj)
     else:
         return obj
+
+
+def format_diet_name(diet_name):
+    return " ".join(word for word in re.findall("[A-Z][^A-Z]*", diet_name))
