@@ -1,6 +1,6 @@
 {
   "author": "Albert Heijn",
-  "canonical_url": "ah.nl",
+  "canonical_url": "https://www.ah.nl/allerhande/recept/R-R1198767/rijkgevulde-vegan-pastasalade",
   "site_name": "Albert Heijn",
   "host": "ah.nl",
   "language": "nl",
@@ -28,8 +28,8 @@
   "yields": "4 servings",
   "description": "Vul je pastasalade met semi-gedroogde tomaten, olijven en aubergine. Garneer met verse kruiden en gerookte amandelen voor extra smaakplezier.",
   "total_time": 20,
-  "ratings": 5.0,
-  "ratings_count": 10,
+  "ratings": 4.64,
+  "ratings_count": 50,
   "nutrients": {
     "calories": "590 kcal energie",
     "fatContent": "27 g vet",
@@ -38,11 +38,16 @@
     "proteinContent": "17 g eiwit"
   },
   "dietary_restrictions": [
-    "Vegan Diet"
+    "Vegetarian Diet",
+    "Vegan Diet",
+    "Low Lactose Diet"
   ],
-  "image": null,
+  "image": "https://static.ah.nl/static/recepten/img_RAM_PRD180565_1024x748_JPG.jpg",
   "keywords": [
+    "vegetarisch",
+    "zonder vlees/vis",
     "veganistisch",
+    "lactosevrij",
     "vooraf te maken",
     "salade",
     "hoofdgerecht",
