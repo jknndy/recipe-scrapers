@@ -44,60 +44,74 @@ class SchemaOrg:
         self.ratingsdata = {}
         self.website_name = None
 
-        data = extruct.extract(
+        # Extract structured data
+        extracted_data = self._extract_structured_data(page_data)
+
+        # Extract website data
+        self._extract_website_data(extracted_data)
+
+        # Extract person references
+        self._extract_person_references(extracted_data)
+
+        # Extract ratings data
+        self._extract_ratings_data(extracted_data)
+
+        # Extract recipe data
+        self._extract_recipe_data(extracted_data)
+
+    def _extract_structured_data(self, page_data):
+        return extruct.extract(
             page_data,
             syntaxes=SYNTAXES,
             errors="log" if settings.LOG_LEVEL <= 10 else "ignore",
             uniform=True,
         )
 
-        # Extract website data
+    def _extract_website_data(self, data):
         for syntax in SYNTAXES:
-            syntax_data = data.get(syntax, [])
-            for item in syntax_data:
-                website = self._find_entity(item, "WebSite")
-                if website:
+            for item in data.get(syntax, []):
+                if website := self._find_entity(item, "WebSite"):
                     self.website_name = website.get("name")
+                    return
 
-        # Extract person references
+    def _extract_person_references(self, data):
         for syntax in SYNTAXES:
-            syntax_data = data.get(syntax, [])
-            for item in syntax_data:
+            for item in data.get(syntax, []):
                 if person := self._find_entity(item, "Person"):
                     key = person.get("@id") or person.get("url")
                     if key:
                         self.people[key] = person
 
-        # Extract ratings data
+    def _extract_ratings_data(self, data):
         for syntax in SYNTAXES:
-            syntax_data = data.get(syntax, [])
-            for item in syntax_data:
-                rating = self._find_entity(item, "AggregateRating")
-                if rating:
+            for item in data.get(syntax, []):
+                if rating := self._find_entity(item, "AggregateRating"):
                     rating_id = rating.get("@id")
                     if rating_id:
                         self.ratingsdata[rating_id] = rating
 
+    def _extract_recipe_data(self, data):
         for syntax in SYNTAXES:
-            # Make sure entries of type Recipe are always parsed first
             syntax_data = data.get(syntax, [])
             try:
-                index = [x.get("@type", "") for x in syntax_data].index("Recipe")
+                index = next(
+                    i
+                    for i, x in enumerate(syntax_data)
+                    if x.get("@type", "") == "Recipe"
+                )
                 syntax_data.insert(0, syntax_data.pop(index))
-            except ValueError:
+            except StopIteration:
                 pass
 
             for item in syntax_data:
                 if SCHEMA_ORG_HOST not in item.get("@context", ""):
                     continue
 
-                # If the item itself is a recipe, then use it directly as our datasource
                 if recipe := self._find_entity(item, "Recipe"):
                     self.format = syntax
                     self.data = recipe
                     return
 
-                # If the item is a webpage and describes a recipe entity, use the entity as our datasource
                 if self._contains_schematype(item, "WebPage"):
                     main_entity = item.get("mainEntity", {})
                     if self._contains_schematype(main_entity, "Recipe"):
@@ -119,27 +133,18 @@ class SchemaOrg:
 
     def category(self):
         category = self.data.get("recipeCategory")
-        if isinstance(category, list):
-            return ",".join(category)
-        return category
+        return ",".join(category) if isinstance(category, list) else category
 
     def author(self):
         author = self.data.get("author") or self.data.get("Author")
-        if (
-            author
-            and isinstance(author, list)
-            and len(author) >= 1
-            and isinstance(author[0], dict)
-        ):
+        if isinstance(author, list) and author and isinstance(author[0], dict):
             author = author[0]
-        if author and isinstance(author, dict):
+        if isinstance(author, dict):
             author_key = author.get("@id") or author.get("url")
             if author_key and author_key in self.people:
                 author = self.people[author_key]
-        if author and isinstance(author, dict):
             author = author.get("name")
-        if author:
-            return author.strip()
+        return author.strip() if author else None
 
     def _read_duration_field(self, k: str) -> int | None:
         v = self.data.get(k)
@@ -165,8 +170,7 @@ class SchemaOrg:
 
         prep_time = self._read_duration_field("prepTime") or 0
         cook_time = self._read_duration_field("cookTime") or 0
-        if prep_time or cook_time:
-            return prep_time + cook_time
+        return prep_time + cook_time if prep_time or cook_time else None
 
     def cook_time(self):
         if not (self.data.keys() & {"cookTime"}):
@@ -174,7 +178,7 @@ class SchemaOrg:
         return self._read_duration_field("cookTime")
 
     def prep_time(self):
-        if not (self.data.keys() & {"prepTime"}):
+        if "prepTime" not in self.data:
             raise SchemaOrgException("Preptime information not found in SchemaOrg")
         return self._read_duration_field("prepTime")
 
@@ -182,10 +186,9 @@ class SchemaOrg:
         if not (self.data.keys() & {"recipeYield", "yield"}):
             raise SchemaOrgException("Servings information not found in SchemaOrg")
         yield_data = self.data.get("recipeYield") or self.data.get("yield")
-        if yield_data and isinstance(yield_data, list):
+        if isinstance(yield_data, list):
             yield_data = yield_data[0]
-        if yield_data:
-            return get_yields(str(yield_data))
+        return get_yields(str(yield_data)) if yield_data else None
 
     def image(self):
         image = self.data.get("image")
@@ -213,9 +216,9 @@ class SchemaOrg:
         )
 
         if ingredients and isinstance(ingredients[0], list):
-            ingredients = list(chain(*ingredients))  # flatten
+            ingredients = list(chain.from_iterable(ingredients))
 
-        if ingredients and isinstance(ingredients, str):
+        if isinstance(ingredients, str):
             ingredients = [ingredients]
 
         return [
@@ -224,52 +227,37 @@ class SchemaOrg:
 
     def nutrients(self):
         nutrients = self.data.get("nutrition", {})
-        cleaned_nutrients = {}
-
-        for key, val in nutrients.items():
-            if not key or key.startswith("@") or not val:
-                continue
-
-            cleaned_nutrients[key] = str(val)
-
         return {
-            normalize_string(nutrient): normalize_string(value)
-            for nutrient, value in cleaned_nutrients.items()
+            normalize_string(key): normalize_string(str(val))
+            for key, val in nutrients.items()
+            if key and not key.startswith("@") and val
         }
 
     def _extract_howto_instructions_text(self, schema_item):
         instructions_gist = []
-        if type(schema_item) is str:
+        if isinstance(schema_item, str):
             instructions_gist.append(schema_item)
         elif schema_item.get("@type") == "HowToStep":
-            if schema_item.get("name", False):
-                # some sites have duplicated name and text properties (1:1)
-                # others have name same as text but truncated to X chars.
-                # ignore name in these cases and add the name value only if it's different from the text
-                if not schema_item.get("text").startswith(
-                    schema_item.get("name").rstrip(".")
-                ):
-                    instructions_gist.append(schema_item.get("name"))
+            if schema_item.get("name") and not schema_item.get("text").startswith(
+                schema_item.get("name").rstrip(".")
+            ):
+                instructions_gist.append(schema_item.get("name"))
             if schema_item.get("itemListElement"):
                 schema_item = schema_item.get("itemListElement")
             instructions_gist.append(schema_item.get("text"))
         elif schema_item.get("@type") == "HowToSection":
             name = schema_item.get("name") or schema_item.get("Name")
-            if name is not None:
+            if name:
                 instructions_gist.append(name)
             for item in schema_item.get("itemListElement"):
-                instructions_gist += self._extract_howto_instructions_text(item)
+                instructions_gist.extend(self._extract_howto_instructions_text(item))
         return instructions_gist
 
     def instructions(self):
         instructions = self.data.get("recipeInstructions") or ""
 
-        if (
-            instructions
-            and isinstance(instructions, list)
-            and isinstance(instructions[0], list)
-        ):
-            instructions = list(chain(*instructions))  # flatten
+        if isinstance(instructions, list) and isinstance(instructions[0], list):
+            instructions = list(chain.from_iterable(instructions))
 
         if isinstance(instructions, dict):
             instructions = instructions.get("itemListElement")
@@ -277,8 +265,8 @@ class SchemaOrg:
         if isinstance(instructions, list):
             instructions_gist = []
             for schema_instruction_item in instructions:
-                instructions_gist += self._extract_howto_instructions_text(
-                    schema_instruction_item
+                instructions_gist.extend(
+                    self._extract_howto_instructions_text(schema_instruction_item)
                 )
 
             return "\n".join(
@@ -291,11 +279,10 @@ class SchemaOrg:
         ratings = self.data.get("aggregateRating") or self._find_entity(
             self.data, "AggregateRating"
         )
-        if ratings and isinstance(ratings, dict):
+        if isinstance(ratings, dict):
             rating_id = ratings.get("@id")
             if rating_id and rating_id in self.ratingsdata:
                 ratings = self.ratingsdata[rating_id]
-        if ratings and isinstance(ratings, dict):
             ratings = ratings.get("ratingValue")
         if ratings:
             return round(float(ratings), 2)
@@ -318,15 +305,13 @@ class SchemaOrg:
         cuisine = self.data.get("recipeCuisine")
         if cuisine is None:
             raise SchemaOrgException("No cuisine data in SchemaOrg.")
-        elif isinstance(cuisine, list):
-            return ",".join(cuisine)
-        return cuisine
+        return ",".join(cuisine) if isinstance(cuisine, list) else cuisine
 
     def description(self):
         description = self.data.get("description")
         if description is None:
             raise SchemaOrgException("No description data in SchemaOrg.")
-        if description and isinstance(description, list):
+        if isinstance(description, list):
             description = description[0]
         return normalize_string(description)
 
@@ -334,7 +319,7 @@ class SchemaOrg:
         cooking_method = self.data.get("cookingMethod")
         if cooking_method is None:
             raise SchemaOrgException("No cooking method data in SchemaOrg")
-        if cooking_method and isinstance(cooking_method, list):
+        if isinstance(cooking_method, list):
             cooking_method = cooking_method[0]
         return normalize_string(cooking_method)
 
@@ -342,12 +327,10 @@ class SchemaOrg:
         keywords = self.data.get("keywords")
         if keywords is None:
             raise SchemaOrgException("No keywords data in SchemaOrg")
-        if keywords:
-            if isinstance(keywords, list):
-                keywords = ", ".join(keywords)
-            keywords = normalize_string(keywords)
-            keywords = csv_to_tags(keywords)
-        return keywords
+        if isinstance(keywords, list):
+            keywords = ", ".join(keywords)
+        keywords = normalize_string(keywords)
+        return csv_to_tags(keywords)
 
     def dietary_restrictions(self):
         dietary_restrictions = self.data.get("suitableForDiet")
@@ -358,6 +341,4 @@ class SchemaOrg:
 
         formatted_diets = [format_diet_name(diet) for diet in dietary_restrictions]
         formatted_diets = ", ".join(formatted_diets)
-        final_diets = csv_to_tags(formatted_diets)
-
-        return final_diets
+        return csv_to_tags(formatted_diets)
