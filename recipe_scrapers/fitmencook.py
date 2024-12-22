@@ -1,18 +1,11 @@
 from ._abstract import AbstractScraper
-from ._utils import get_minutes, get_yields, normalize_string
+from ._utils import get_yields, normalize_string
 
 
 class FitMenCook(AbstractScraper):
     @classmethod
     def host(cls):
         return "fitmencook.com"
-
-    def total_time(self):
-        total_time_element = self.soup.find("div", {"class": "fmc_total"})
-        if total_time_element:
-            time_text = total_time_element.find("span", {"class": "fmc_amount"})
-            if time_text:
-                return get_minutes(time_text.text.strip())
 
     def yields(self):
         yields = None
