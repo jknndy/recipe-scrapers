@@ -1,0 +1,97 @@
+{
+  "author": "Alessandra Priscilla Soares Mar",
+  "canonical_url": "https://www.receitasnestle.com.br/receitas/receita-cheesecake-cupuacu",
+  "site_name": "Receitas Nestlé",
+  "host": "receitasnestle.com.br",
+  "language": "pt-br",
+  "title": "Receita de Cheesecake de Cupuaçu",
+  "ingredients": [
+    "1 pacote de Biscoito TOSTINES® Maisena",
+    "5 colheres (sopa) de manteiga derretida",
+    "1 colher (chá) de canela em pó",
+    "1 pote de cream cheese",
+    "1 lata de NESTLÉ® Creme De Leite",
+    "1 xícara (chá) de açúcar",
+    "Suco de 1 limão",
+    "Polpa de 1 cupuaçu",
+    "2 ovos",
+    "1 xícara (chá) de geleia de cupuaçu"
+  ],
+  "ingredient_groups": [
+    {
+      "ingredients": [
+        "1 pacote de Biscoito TOSTINES® Maisena",
+        "5 colheres (sopa) de manteiga derretida",
+        "1 colher (chá) de canela em pó"
+      ],
+      "purpose": "Base"
+    },
+    {
+      "ingredients": [
+        "1 pote de cream cheese",
+        "1 lata de NESTLÉ® Creme De Leite",
+        "1 xícara (chá) de açúcar",
+        "Suco de 1 limão",
+        "Polpa de 1 cupuaçu",
+        "2 ovos",
+        "1 xícara (chá) de geleia de cupuaçu"
+      ],
+      "purpose": "Recheio"
+    }
+  ],
+  "instructions_list": [
+    "Base",
+    "Em um liquidificador triture o Biscoito TOSTINES Maisena até obter uma farinha fina. Passe para um recipiente e misture com a manteiga e a canela até formar uma massa homogênea.",
+    "Forre o fundo de uma forma de fundo removível com essa mistura. Asse em forno baixo, pré-aquecido a 160°C, por cerca de 15 minutos, apenas para firmar a base.",
+    "Recheio",
+    "Em uma batedeira, bata o cream cheese, NESTLÉ Creme de Leite, açúcar, suco de limão, a polpa de cupuaçu e os ovos até obter um creme consistente e homogêneo.",
+    "Despeje o recheio sobre a base já assada, leve ao forno até que o recheio esteja firme e levemente dourado. Após assar, deixe esfriar à temperatura ambiente e, em seguida, leve à geladeira por algumas horas.",
+    "Na hora de servir, cubra a cheesecake com a geleia de cupuaçu."
+  ],
+  "category": "Sobremesa",
+  "yields": "6 servings",
+  "description": "Receita de Cheesecake de Cupuaçu deliciosa feita com Biscoito TOSTINES Maisena, NESTLÉ Creme de Leite, manteiga, canela em pó, cream cheese, açúcar, limão, polpa de cupuaçu, ovos e geleia de cupuaçu.",
+  "total_time": 25,
+  "cuisine": "Mundial,Local,Brasileira",
+  "nutrients": {
+    "calories": "516",
+    "fatContent": "33",
+    "saturatedFatContent": "19",
+    "carbohydrateContent": "47",
+    "sugarContent": "31",
+    "proteinContent": "6",
+    "sodiumContent": "207",
+    "fiberContent": "1"
+  },
+  "image": "https://images.aws.nestle.recipes/original/d2210b00a5c2f543a641bd4d0bc311bb_cheesecake-cucpuacu-receitas-nestle.jpeg",
+  "keywords": [
+    "natal inesquecível",
+    "receitas nestlé",
+    "cupuaçu",
+    "cream cheese",
+    "receita sem carne de porco",
+    "receita sem peixe",
+    "receita sem crustaceos",
+    "receita do consumidor doce",
+    "receita do consumidor",
+    "cheesecake",
+    "Family Meals",
+    "Café da Tarde",
+    "Aperitivo",
+    "Sobremesa",
+    "Mundial",
+    "Local",
+    "Brasileira",
+    "Lancheira para adultos",
+    "Dias da semana",
+    "Finais de semana",
+    "Verão",
+    "Celebração",
+    "Dia a Dia",
+    "Sem peixe",
+    "Sem crustáceos",
+    "Sem carne de porco",
+    "With eggs",
+    "Tortas / tortas doces"
+  ]
+}
