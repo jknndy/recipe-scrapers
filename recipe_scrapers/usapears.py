@@ -21,15 +21,22 @@ class USAPears(AbstractScraper):
         if d1 and l1:
             return d1["content"]
 
-    def total_time(self):
-        total_time = 0
-        recipe_legends = self.soup.find_all("div", {"class": "recipe-legend"})
-        for recipe_legend in recipe_legends:
-            if recipe_legend.get_text() in ["Prep Time", "Cook Time"]:
-                total_time += get_minutes(
-                    recipe_legend.parent.find("div", {"class": "recipe-value-data"})
+    def _get_time(self, time_type):
+        for legend in self.soup.find_all("div", {"class": "recipe-legend"}):
+            if legend.get_text() == time_type:
+                return get_minutes(
+                    legend.parent.find("div", {"class": "recipe-value-data"})
                 )
-        return total_time
+        return 0
+
+    def prep_time(self):
+        return self._get_time("Prep Time")
+
+    def cook_time(self):
+        return self._get_time("Cook Time")
+
+    def total_time(self):
+        return self.prep_time() + self.cook_time()
 
     def ingredients(self):
         ingredient_elements = self.soup.select(
