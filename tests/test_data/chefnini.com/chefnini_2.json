@@ -1,0 +1,65 @@
+{
+  "author": "Virginie Fouquet",
+  "canonical_url": "https://www.chefnini.com/pavlova-aux-fraises-et-chantilly-a-linfusion-hibiscus-et-menthe-poivree/",
+  "site_name": "chefNini",
+  "host": "chefnini.com",
+  "language": "fr-FR",
+  "title": "Pavlova aux fraises et chantilly à l’infusion hibiscus et menthe poivrée",
+  "ingredients": [
+    "2 blancs d’œufs",
+    "Le double du poids des blancs en sucre en poudre",
+    "30 cl de crème fleurette entière",
+    "4 sachets Infusion Moment Fleuri La Maison du Thé",
+    "40 g de sucre glace",
+    "1 petite barquette de fraises",
+    "2 cuillères à café de confiture de fraises"
+  ],
+  "ingredient_groups": [
+    {
+      "ingredients": [
+        "2 blancs d’œufs",
+        "Le double du poids des blancs en sucre en poudre"
+      ],
+      "purpose": "La meringue"
+    },
+    {
+      "ingredients": [
+        "30 cl de crème fleurette entière",
+        "4 sachets Infusion Moment Fleuri La Maison du Thé",
+        "40 g de sucre glace"
+      ],
+      "purpose": "La chantilly"
+    },
+    {
+      "ingredients": [
+        "1 petite barquette de fraises",
+        "2 cuillères à café de confiture de fraises"
+      ],
+      "purpose": "Les fruits"
+    }
+  ],
+  "instructions_list": [
+    "La meringue :",
+    "Portez de l’eau à frémissements dans une casserole.",
+    "Versez les blancs d’oeufs dans un saladier avec le sucre et commencez à fouetter au batteur électrique.",
+    "Posez le saladier sur la casserole d’eau frémissante.",
+    "Fouettez sans cesse jusqu’à ce que la meringue devienne bien blanche, brillante.",
+    "Retirez le saladier de la casserole d’eau et fouettez encore 10 minutes.",
+    "Déposez une feuille de papier sulfurisé sur une plaque.",
+    "Déposez 4 belles cuillères à soupe de meringue et façonnez avec le dos de la cuillère pour former des petits nids.",
+    "Faites préchauffer votre four à 120°C (un peu moins si votre four à tendance à chauffer fort) et enfournez pour 2 heures. Les meringues doivent se décoller facilement du papier.",
+    "Laissez refroidir à température ambiante.",
+    "La chantilly :",
+    "Portez à ébullition la crème fleurette.",
+    "Ajoutez les sachets de thé et laissez infuser 12 h au réfrigérateur.",
+    "Au bout des 12 heures, retirez les sachets en pressant bien pour récupérer toutes les saveurs.",
+    "Versez la crème dans un saladier et montez-la en chantilly bien ferme en ajoutant à mi-parcours le sucre glace.",
+    "Le montage :",
+    "Au moment du service, dressez la chantilly sur les meringues en vous servant d’une cuillère ou d’une poche à douille.",
+    "Coupez les fraises en morceaux et répartissez-les.",
+    "Diluez la confiture avec un peu d’eau et arrosez-en les pavlova."
+  ],
+  "yields": "4 servings",
+  "description": "Je vous retrouve aujourd’hui avec une recette que j’aime particulièrement préparer en cette saison avec le retour des beaux jours : Il s’agit de la pavlova. Un de mes desserts préférés (en même temps, dès qu’il y a de la meringue… 🥰).",
+  "image": "https://static.chefnini.com/wp-content/uploads/2022/04/pavlova-fraise-hibiscus7.jpg"
+}
