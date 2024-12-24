@@ -221,8 +221,13 @@ class SchemaOrg:
         if ingredients and isinstance(ingredients, str):
             ingredients = [ingredients]
 
+        def remove_double_parentheses(ingredient):
+            if "((" in ingredient and "))" in ingredient:
+                ingredient = ingredient.replace("((", "(").replace("))", ")")
+            return normalize_string(ingredient)
+
         return [
-            normalize_string(ingredient).replace("((", "(").replace("))", ")")
+            remove_double_parentheses(ingredient)
             for ingredient in ingredients
             if ingredient
         ]
