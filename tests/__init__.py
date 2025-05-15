@@ -37,6 +37,7 @@ OPTIONAL_TESTS = [
     "equipment",
     "ratings_count",
     "dietary_restrictions",
+    "video",
 ]
 
 

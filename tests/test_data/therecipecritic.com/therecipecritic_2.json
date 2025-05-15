@@ -72,5 +72,9 @@
     "fiberContent": "1 g",
     "cholesterolContent": "104 mg"
   },
-  "image": "https://therecipecritic.com/wp-content/uploads/2021/07/creamyparmesanchicken.jpg"
+  "image": "https://therecipecritic.com/wp-content/uploads/2021/07/creamyparmesanchicken.jpg",
+  "video": {
+    "name": "Creamy Parmesan Garlic Mushroom Chicken",
+    "url": "https://content.jwplatform.com/videos/QMAb4pow.mp4"
+  }
 }

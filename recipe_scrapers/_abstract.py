@@ -180,6 +180,10 @@ class AbstractScraper:
         """Keywords or tags used to describe the recipe"""
         raise NotImplementedError("This should be implemented.")
 
+    def video(self):
+        """Video of the recipe."""
+        raise NotImplementedError("This should be implemented.")
+
     def links(self):
         """Links found in the recipe."""
         invalid_href = {"#", ""}

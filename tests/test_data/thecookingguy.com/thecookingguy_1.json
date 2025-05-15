@@ -51,5 +51,9 @@
     "Sauce",
     "Tacos",
     "Sam The Cooking Guy"
-  ]
+  ],
+  "video": {
+    "name": "Creamy Lemon Chicken",
+    "url": "https://www.youtube.com/watch?v="
+  }
 }

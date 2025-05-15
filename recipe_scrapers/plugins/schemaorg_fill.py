@@ -41,6 +41,7 @@ class SchemaOrgFillPlugin(PluginInterface):
         "keywords",
         "ratings_count",
         "dietary_restrictions",
+        "video",
     )
 
     @classmethod

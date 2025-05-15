@@ -38,5 +38,9 @@
   "cuisine": "American",
   "ratings": 4.85,
   "ratings_count": 19,
-  "image": "https://bakerbynature.com/wp-content/uploads/2016/01/IMG_3847-5-2.jpg"
+  "image": "https://bakerbynature.com/wp-content/uploads/2016/01/IMG_3847-5-2.jpg",
+  "video": {
+    "name": "Broccoli and Cheddar Twice-Baked Potatoes",
+    "url": "https://mediavine-res.cloudinary.com/video/upload/t_original/v1695825989/iXwd4fl1p.mp4"
+  }
 }

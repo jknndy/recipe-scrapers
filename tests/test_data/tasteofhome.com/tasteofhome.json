@@ -44,5 +44,9 @@
     "fiberContent": "2g fiber)",
     "cholesterolContent": "63mg cholesterol"
   },
-  "image": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Pressure-Cooker-Sauerbraten_EXPS_THN18_39243_E06_06_2b.jpg"
+  "image": "https://www.tasteofhome.com/wp-content/uploads/0001/01/Pressure-Cooker-Sauerbraten_EXPS_THN18_39243_E06_06_2b.jpg",
+  "video": {
+    "name": "Pressure Cooker Sauerbraten",
+    "url": "https://videodam.tmbi.com/wp-content/uploads/2018/10/DIYD_BLB_39243_080818_H.mp4"
+  }
 }

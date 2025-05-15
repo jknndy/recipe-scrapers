@@ -86,5 +86,9 @@
     "easy",
     "orange",
     "quick"
-  ]
+  ],
+  "video": {
+    "name": "BEST Orange Chicken Recipe",
+    "url": "https://www.youtube.com/watch?v=7EGYvGOKfMg"
+  }
 }

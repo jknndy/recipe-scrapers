@@ -102,6 +102,7 @@ class TestUtils(unittest.TestCase):
             "site_name",
             "title",
             "total_time",
+            "video",
             "yields",
         ]
         public_methods = [
@@ -147,6 +148,7 @@ class TestUtils(unittest.TestCase):
             "dietary_restrictions",
             "image",
             "keywords",
+            "video",
         ]
         self.assertEqual((expected_methods), (abstract_methods))
 

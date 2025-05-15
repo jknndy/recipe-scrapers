@@ -31,5 +31,9 @@
   "total_time": 25,
   "ratings": 3.6,
   "ratings_count": 380,
-  "image": "https://img.koket.se/standard-mega/myllymakis-toast-skagen-2.jpg"
+  "image": "https://img.koket.se/standard-mega/myllymakis-toast-skagen-2.jpg",
+  "video": {
+    "name": "Myllymäkis toast skagen",
+    "url": "https://www.tv4play.se/iframe/video/3036821?autoload=true"
+  }
 }

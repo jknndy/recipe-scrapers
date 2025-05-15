@@ -87,5 +87,9 @@
   "total_time": 90,
   "cook_time": null,
   "prep_time": 90,
-  "image": "https://kuchynalidla.sk/storage/app/uploads/public/65f/9dc/41c/65f9dc41c13a3718878451.jpg"
+  "image": "https://kuchynalidla.sk/storage/app/uploads/public/65f/9dc/41c/65f9dc41c13a3718878451.jpg",
+  "video": {
+    "name": "Špízy z jahňacieho stehna so zeleninou a s mätovou salsou",
+    "url": "https://www.youtube.com/embed/-dX4qtGjvwU"
+  }
 }

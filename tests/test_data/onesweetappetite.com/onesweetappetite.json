@@ -52,5 +52,9 @@
     "fiberContent": "1 g",
     "cholesterolContent": "129 mg"
   },
-  "image": "https://onesweetappetite.com/wp-content/uploads/2021/07/ranch-chicken-recipe-6.jpg"
+  "image": "https://onesweetappetite.com/wp-content/uploads/2021/07/ranch-chicken-recipe-6.jpg",
+  "video": {
+    "name": "Ranch Chicken Recipe",
+    "url": "https://mediavine-res.cloudinary.com/video/upload/t_original/v1627509264/xdz11dpj4z9z6lcjht8u.mp4"
+  }
 }

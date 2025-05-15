@@ -45,5 +45,9 @@
     "chocolate",
     "christmas",
     "cookies"
-  ]
+  ],
+  "video": {
+    "name": "Chocolate Crinkle Cookies",
+    "url": "https://mediavine-res.cloudinary.com/video/upload/t_original/v1576106708/jcit3pzgjhomy8epeqan.mp4"
+  }
 }

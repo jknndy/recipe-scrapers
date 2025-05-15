@@ -32,5 +32,9 @@
   "nutrients": {
     "calories": "339 calories"
   },
-  "image": "https://img.cuisineaz.com/660x660/2014/02/24/i78436-filet-de-saumon-au-four.jpeg"
+  "image": "https://img.cuisineaz.com/660x660/2014/02/24/i78436-filet-de-saumon-au-four.jpeg",
+  "video": {
+    "name": "Filet de saumon au four",
+    "url": "https://img.cuisineaz.com/videos/2021/05/26/2546.mp4"
+  }
 }

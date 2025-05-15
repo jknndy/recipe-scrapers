@@ -71,5 +71,9 @@
     "Sauce",
     "Tacos",
     "Sam The Cooking Guy"
-  ]
+  ],
+  "video": {
+    "name": "Chili Cumin Lamb",
+    "url": "https://www.youtube.com/watch?v="
+  }
 }

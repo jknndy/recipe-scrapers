@@ -85,5 +85,9 @@
     "chili mac and cheese",
     "Crockpot Chili Mac",
     "slow cooker chili mac"
-  ]
+  ],
+  "video": {
+    "name": "Chili Mac and Cheese",
+    "url": "https://mediavine-res.cloudinary.com/video/upload/t_original/v1629214467/gbpjkgzyibxh9fdhntfk.mp4"
+  }
 }

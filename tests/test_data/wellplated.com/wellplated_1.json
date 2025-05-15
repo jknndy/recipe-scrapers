@@ -74,5 +74,9 @@
     "simple fried rice recipe",
     "simple homemade fried rice",
     "vegetable fried rice"
-  ]
+  ],
+  "video": {
+    "name": "Homemade Fried Rice",
+    "url": "https://mediavine-res.cloudinary.com/video/upload/t_original/v1695654557/iF8Fqjygb.mp4"
+  }
 }

@@ -38,5 +38,9 @@
   "cuisine": "Italiana",
   "ratings": 4.6,
   "ratings_count": 1335,
-  "image": "https://ricetta.it/Uploads/Imgs/lasagne-al-radicchio-e-formaggio_medium.jpg.webp"
+  "image": "https://ricetta.it/Uploads/Imgs/lasagne-al-radicchio-e-formaggio_medium.jpg.webp",
+  "video": {
+    "name": "Lasagne al radicchio e formaggio",
+    "url": "https://cdn.video.ricetta.it/tutorial/320/lasagne-al-radicchio-e-formaggio.mp4"
+  }
 }

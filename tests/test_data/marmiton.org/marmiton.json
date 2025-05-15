@@ -56,5 +56,9 @@
     "ail",
     "facile",
     "moyen"
-  ]
+  ],
+  "video": {
+    "name": "Ratatouille",
+    "url": "https://assets.afcdn.com/video13/20161130/v528072_9805_13_sd.mp4"
+  }
 }

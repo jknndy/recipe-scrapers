@@ -375,3 +375,22 @@ class SchemaOrg:
         final_diets = csv_to_tags(formatted_diets)
 
         return final_diets
+
+    def video(self):
+        video = self.data.get("video")
+        if not video or not video.get("contentUrl"):
+            return None
+
+        name = video.get("name")
+        url = video.get("contentUrl")
+
+        if isinstance(name, list):
+            name = list(dict.fromkeys(name))
+            name = name[0] if len(name) == 1 else name
+
+        if isinstance(url, list):
+            url = list(dict.fromkeys(url))
+            url = url[0] if len(url) == 1 else url
+
+        video_data = {"name": name, "url": url}
+        return {k: v for k, v in video_data.items() if v}

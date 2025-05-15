@@ -30,5 +30,9 @@
   "description": "",
   "total_time": 40,
   "cook_time": 40,
-  "image": "https://eattolerant.de/wp-content/uploads/2022/01/Vegane-Rotkohlsuppe-13-scaled.jpg"
+  "image": "https://eattolerant.de/wp-content/uploads/2022/01/Vegane-Rotkohlsuppe-13-scaled.jpg",
+  "video": {
+    "name": "Vegane und histaminarme Rotkohlsuppe Eat Tolerant",
+    "url": "https://eattolerant.de/wp-content/uploads/2022/01/Vegane-Rotkohlsuppe.mp4"
+  }
 }

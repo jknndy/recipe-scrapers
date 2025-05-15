@@ -44,5 +44,9 @@
     "proteinContent": "13 g",
     "fiberContent": "5 g"
   },
-  "image": "https://krollskorner.com/wp-content/uploads/2019/06/sesamenoodlesupdate_20-1-of-1.jpg"
+  "image": "https://krollskorner.com/wp-content/uploads/2019/06/sesamenoodlesupdate_20-1-of-1.jpg",
+  "video": {
+    "name": "kungpaovideo",
+    "url": "https://content.jwplatform.com/videos/nEkHeIUs.mp4"
+  }
 }

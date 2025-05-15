@@ -108,5 +108,9 @@
     "today food",
     "video",
     "yeast"
-  ]
+  ],
+  "video": {
+    "name": "Homemade Cinnamon Rolls Recipe by Tasty",
+    "url": "https://vid.tasty.co/output/25812/mp4_640x640/1488912074"
+  }
 }
