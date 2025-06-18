@@ -388,6 +388,7 @@ from .rezeptwelt import Rezeptwelt
 from .ricetta import Ricetta
 from .ricetteperbimby import RicettePerBimby
 from .rosannapansino import RosannaPansino
+from .ruledme import RuledMe
 from .rutgerbakt import RutgerBakt
 from .saboresajinomoto import SaboresAjinomoto
 from .sallysbakingaddiction import SallysBakingAddiction
@@ -723,6 +724,7 @@ SCRAPERS = {
     Rewe.host(): Rewe,
     RecipeLand.host(): RecipeLand,
     RicettePerBimby.host(): RicettePerBimby,
+    RuledMe.host(): RuledMe,
     SamsungFood.host(): SamsungFood,
     SandwhichTribunal.host(): SandwhichTribunal,
     SavoryNothings.host(): SavoryNothings,
