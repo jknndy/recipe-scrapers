@@ -1,8 +1,8 @@
 from ._abstract import AbstractScraper
-from ._utils import get_equipment, normalize_string
+from ._wprm import WPRMMixin
 
 
-class AmazingRibs(AbstractScraper):
+class AmazingRibs(WPRMMixin, AbstractScraper):
     @classmethod
     def host(cls):
         return "amazingribs.com"
