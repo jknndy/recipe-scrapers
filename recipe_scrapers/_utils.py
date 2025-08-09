@@ -166,7 +166,11 @@ def get_minutes(element):
         except Exception:
             pass
 
-    time_units = TIME_REGEX.search(time_text).groupdict()
+    time_match = TIME_REGEX.search(time_text)
+    if time_match is None:
+        return None
+
+    time_units = time_match.groupdict()
     if not any(time_units.values()):
         return None
 

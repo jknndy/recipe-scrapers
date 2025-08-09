@@ -47,6 +47,16 @@ class TestUtils(unittest.TestCase):
             with self.subTest(text=text):
                 self.assertEqual(expected, get_minutes(text))
 
+    def test_unmatched_time_string_returns_none(self):
+        from unittest.mock import patch
+
+        class DummyPattern:
+            def search(self, _):
+                return None
+
+        with patch("recipe_scrapers._utils.TIME_REGEX", new=DummyPattern()):
+            self.assertIsNone(get_minutes("not a time"))
+
     def test_iso8601_fixtures(self):
         # Tests for ISO 8601 formatted outputs formats.
         for text, expected in self.iso8601_fixtures.items():
