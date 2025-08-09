@@ -1,6 +1,5 @@
-import functools
 from ._abstract import AbstractScraper
-from ._utils import normalize_string
+from ._utils import cached_property, normalize_string
 
 
 class SunBasket(AbstractScraper):
@@ -11,7 +10,7 @@ class SunBasket(AbstractScraper):
     def site_name(self):
         return self.author()
 
-    @functools.cached_property
+    @cached_property
     def _instructions_list(self):
         instructions_container = self.soup.find(
             "div", {"class": "instructions-container"}

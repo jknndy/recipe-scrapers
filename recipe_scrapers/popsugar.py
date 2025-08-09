@@ -1,6 +1,5 @@
-import functools
 from ._abstract import AbstractScraper
-from ._utils import get_minutes, get_yields, normalize_string
+from ._utils import cached_property, get_minutes, get_yields, normalize_string
 
 
 class PopSugar(AbstractScraper):
@@ -54,6 +53,6 @@ class PopSugar(AbstractScraper):
         container = self._context.find("h3", string="Directions").parent
         return "\n".join([entry.get_text() for entry in container.findAll("li")])
 
-    @functools.cached_property
+    @cached_property
     def _context(self):
         return self.soup.find("div", {"class": "recipe-card"})
