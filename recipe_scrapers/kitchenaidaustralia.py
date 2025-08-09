@@ -1,9 +1,8 @@
-import functools
 import re
 
 from ._abstract import AbstractScraper
 from ._grouping_utils import IngredientGroup
-from ._utils import get_minutes
+from ._utils import cached_property, get_minutes
 
 
 class KitchenAidAustralia(AbstractScraper):
@@ -60,14 +59,14 @@ class KitchenAidAustralia(AbstractScraper):
 
         return self._parse_list(method)
 
-    @functools.cached_property
+    @cached_property
     def _get_recipe(self):
         """
         Get the recipe container element.
         """
         return self.soup.find("article")
 
-    @functools.cached_property
+    @cached_property
     def _get_summary(self):
         """
         Get the summary container element.
