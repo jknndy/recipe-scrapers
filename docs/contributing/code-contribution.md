@@ -32,6 +32,18 @@ While we're working on comprehensive documentation, the codebase is designed to
 be self-explanatory. As a developer, you can understand our patterns and expectations
 by taking a look at existing scrapers in the `recipe_scrapers/` directory.
 
+For shared utilities, prefer importing from existing helpers rather than the
+standard library directly. For example, to use `cached_property`, import the
+alias from `_utils`:
+
+```py
+from recipe_scrapers._utils import cached_property
+
+@cached_property
+def example(self):
+    ...
+```
+
 
 ## Hints
 

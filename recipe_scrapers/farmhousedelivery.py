@@ -1,11 +1,10 @@
 import re
 
-import functools
 from bs4 import Tag
 
 from ._abstract import AbstractScraper
 from ._exceptions import FieldNotProvidedByWebsiteException
-from ._utils import normalize_string
+from ._utils import cached_property, normalize_string
 
 """
     NOTE: This website has at least 2 prominent layouts styles, so there are two logic blocks and 2 test cases to
@@ -60,7 +59,7 @@ class FarmhouseDelivery(AbstractScraper):
 
         return None
 
-    @functools.cached_property
+    @cached_property
     def _instructions_list(self):
         # Style 1
         instructions_marker = self.soup.find("p", string=re.compile(r"Instructions:"))

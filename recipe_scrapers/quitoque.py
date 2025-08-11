@@ -1,6 +1,11 @@
-import functools
 from ._abstract import AbstractScraper
-from ._utils import csv_to_tags, get_minutes, get_yields, normalize_string
+from ._utils import (
+    cached_property,
+    csv_to_tags,
+    get_minutes,
+    get_yields,
+    normalize_string,
+)
 
 
 class QuiToque(AbstractScraper):
@@ -23,7 +28,7 @@ class QuiToque(AbstractScraper):
                 total_time = self._get_text(time).replace(time_name, "")
         return get_minutes(total_time)
 
-    @functools.cached_property
+    @cached_property
     def _nutrients(self):
         return self.soup.find(id="portion")
 

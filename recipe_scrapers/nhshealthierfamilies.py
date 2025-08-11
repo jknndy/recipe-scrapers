@@ -1,9 +1,8 @@
 import re
-import functools
 
 from ._abstract import AbstractScraper
 from ._grouping_utils import group_ingredients
-from ._utils import get_minutes, get_yields, normalize_string
+from ._utils import cached_property, get_minutes, get_yields, normalize_string
 
 
 class NHSHealthierFamilies(AbstractScraper):
@@ -20,7 +19,7 @@ class NHSHealthierFamilies(AbstractScraper):
             title = title[:-7]
         return title
 
-    @functools.cached_property
+    @cached_property
     def _get_recipe_content(self):
         container = self.soup.find("div", {"class": "bh-recipe__description"})
         descriptions = container.findAll("p")

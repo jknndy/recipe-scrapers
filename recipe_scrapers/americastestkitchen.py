@@ -1,10 +1,9 @@
-import functools
 import json
 
 from recipe_scrapers._grouping_utils import IngredientGroup
 
 from ._abstract import AbstractScraper
-from ._utils import get_minutes, normalize_string
+from ._utils import cached_property, get_minutes, normalize_string
 
 
 class AmericasTestKitchen(AbstractScraper):
@@ -75,7 +74,7 @@ class AmericasTestKitchen(AbstractScraper):
             .replace(" ,", ",")
         )
 
-    @functools.cached_property
+    @cached_property
     def _get_additional_details(self):
         j = json.loads(self.soup.find(type="application/json").string)
         # Handling for new page format

@@ -2,6 +2,7 @@ import html
 import inspect
 import math
 import re
+from functools import cached_property
 
 import isodate
 

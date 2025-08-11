@@ -1,9 +1,8 @@
 import re
-import functools
 
 from ._abstract import AbstractScraper
 from ._grouping_utils import group_ingredients
-from ._utils import normalize_string
+from ._utils import cached_property, normalize_string
 
 
 class GoodHousekeeping(AbstractScraper):
@@ -47,7 +46,7 @@ class GoodHousekeeping(AbstractScraper):
     def cuisine(self):
         return self.schema.cuisine() or None
 
-    @functools.cached_property
+    @cached_property
     def _nutrient_soup(self):
         return self.soup.find(class_="recipe-body-content")
 
