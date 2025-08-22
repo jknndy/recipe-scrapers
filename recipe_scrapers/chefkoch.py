@@ -1,4 +1,5 @@
 from ._abstract import AbstractScraper
+from ._grouping_utils import group_ingredients
 
 
 class Chefkoch(AbstractScraper):
@@ -12,3 +13,11 @@ class Chefkoch(AbstractScraper):
         )
         steps = [element.get_text(strip=True) for element in instruction_elements]
         return "\n".join(steps)
+
+    def ingredient_groups(self):
+        return group_ingredients(
+            self.ingredients(),
+            self.soup,
+            "table.ingredients thead h3",
+            "table.ingredients tbody tr",
+        )

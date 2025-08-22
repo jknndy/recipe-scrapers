@@ -1,0 +1,77 @@
+{
+  "author": "Henglein",
+  "canonical_url": "https://www.chefkoch.de/rezepte/4271941701866291/Lachs-mit-Nusskruste-Gemuese-und-Pfannen-Gnocchi.html",
+  "site_name": "Chefkoch",
+  "host": "chefkoch.de",
+  "language": "de",
+  "title": "Lachs mit Nusskruste, Gemüse und Pfannen-Gnocchi",
+  "ingredients": [
+    "½ Pck. HENGLEIN Pfannen-Gnocchi , (250 g)",
+    "2 EL Olivenöl",
+    "2 Lachsfilet(s) , ca. 150 g pro Filet",
+    "½ Tasse Nüsse , gehackte, z. B. Mandeln, Walnüsse",
+    "2 EL Parmesan, frisch geriebener",
+    "1 EL Dijonsenf",
+    "1 EL Honig",
+    "Salz und Pfeffer",
+    "1 Tasse Sahne",
+    "1 Knoblauchzehe(n) , gehackte",
+    "½ Tasse Cherrytomate(n) , halbierte",
+    "2 Tasse/n Spinat , frischer",
+    "Salz und Pfeffer"
+  ],
+  "ingredient_groups": [
+    {
+      "ingredients": [
+        "½ Pck. HENGLEIN Pfannen-Gnocchi , (250 g)",
+        "2 EL Olivenöl"
+      ],
+      "purpose": "Zutaten für die Pfannen-Gnocchi:"
+    },
+    {
+      "ingredients": [
+        "2 Lachsfilet(s) , ca. 150 g pro Filet",
+        "½ Tasse Nüsse , gehackte, z. B. Mandeln, Walnüsse",
+        "2 EL Parmesan, frisch geriebener",
+        "1 EL Dijonsenf",
+        "1 EL Honig",
+        "Salz und Pfeffer"
+      ],
+      "purpose": "Zutaten für den Lachs mit Nusskruste:"
+    },
+    {
+      "ingredients": [
+        "1 Tasse Sahne",
+        "1 Knoblauchzehe(n) , gehackte",
+        "½ Tasse Cherrytomate(n) , halbierte",
+        "2 Tasse/n Spinat , frischer",
+        "Salz und Pfeffer"
+      ],
+      "purpose": "Zutaten für die Sahnesauce:"
+    }
+  ],
+  "category": "Saucen",
+  "yields": "2 servings",
+  "description": "Lachs mit Nusskruste, Gemüse und Pfannen-Gnocchi - So einfach kann Gourmetküche sein – mit Lachsfilet, Nüssen und Gnocchi aus der Pfanne. Über 6 Bewertungen und für super befunden. Mit ► Portionsrechner ► Kochbuch ► Video-Tipps!",
+  "total_time": 35,
+  "cook_time": 20,
+  "prep_time": 15,
+  "ratings": 4.5,
+  "ratings_count": 6,
+  "nutrients": {
+    "servingSize": "1",
+    "calories": "750 kcal"
+  },
+  "image": "https://img.chefkoch-cdn.de/rezepte/4271941701866291/bilder/1534395/crop-960x540/lachs-mit-nusskruste-gemuese-und-pfannen-gnocchi.jpg",
+  "keywords": [
+    "Gemüse",
+    "Hauptspeise",
+    "Saucen",
+    "Beilage",
+    "einfach",
+    "Fisch",
+    "Kartoffel",
+    "Braten",
+    "Kartoffeln"
+  ]
+}
