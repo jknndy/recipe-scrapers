@@ -1,6 +1,5 @@
-import functools
 from ._abstract import AbstractScraper
-from ._utils import get_minutes, get_yields, normalize_string
+from ._utils import cached_property, get_minutes, get_yields, normalize_string
 
 
 class HEB(AbstractScraper):
@@ -28,7 +27,7 @@ class HEB(AbstractScraper):
 
         return [normalize_string(ingredient.get_text()) for ingredient in ingredients]
 
-    @functools.cached_property
+    @cached_property
     def _instructions_list(self):
         instructions_container = self.soup.find(
             "div", {"data-qe-id": "recipeInstructionsContainer"}

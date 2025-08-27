@@ -1,7 +1,6 @@
-import functools
 from ._abstract import AbstractScraper
 from ._exceptions import FieldNotProvidedByWebsiteException
-from ._utils import normalize_string
+from ._utils import cached_property, normalize_string
 
 MARK_SEPARATOR = " "
 INGREDIENT_SEPARATOR = "• "
@@ -77,6 +76,6 @@ class FelixKitchen(AbstractScraper):
             lines.append(child.text)
         return "\n".join(lines)
 
-    @functools.cached_property
+    @cached_property
     def _get_step_divs(self):
         return self.soup.select('div[class*="wp-block-columns is-layout-flex"]')
