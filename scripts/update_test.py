@@ -22,8 +22,8 @@ def update_testcase(json_file: pathlib.Path) -> None:
     orig_data = json.loads(json_file.read_text(encoding="utf-8"))
     url = orig_data["canonical_url"]
     host = html_file.parent.name
-    html_data = requests.get(url, timeout=10).content.decode()
-    html_file.write_text(html_data)
+    html_data = requests.get(url, timeout=10).content.decode("utf-8")
+    html_file.write_text(html_data, encoding="utf-8")
     supported_only = host in SCRAPERS
     actual = scrape_html(
         html=html_data,
