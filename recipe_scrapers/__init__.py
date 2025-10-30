@@ -501,6 +501,7 @@ from .theoldwomanandthesea import TheOldWomanAndTheSea
 from .thepalatablelife import ThePalatableLife
 from .thepioneerwoman import ThePioneerWoman
 from .theplantbasedschool import ThePlantBasedSchool
+from .therealfooddietitians import TheRealFooddieTitians
 from .therecipecritic import TheRecipeCritic
 from .thesaltymarshmallow import TheSaltyMarshmallow
 from .thespicetrain import TheSpiceTrain
@@ -1051,6 +1052,7 @@ SCRAPERS = {
     ThePalatableLife.host(): ThePalatableLife,
     ThePioneerWoman.host(): ThePioneerWoman,
     ThePlantBasedSchool.host(): ThePlantBasedSchool,
+    TheRealFooddieTitians.host(): TheRealFooddieTitians,
     TheRecipeCritic.host(): TheRecipeCritic,
     TheSaltyMarshmallow.host(): TheSaltyMarshmallow,
     TheSpiceTrain.host(): TheSpiceTrain,

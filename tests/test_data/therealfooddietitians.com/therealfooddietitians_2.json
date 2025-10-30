@@ -1,0 +1,87 @@
+{
+  "author": "Ana Ankeny",
+  "canonical_url": "https://therealfooddietitians.com/pumpkin-pie-bars/",
+  "site_name": "The Real Food Dietitians",
+  "host": "therealfooddietitians.com",
+  "language": "en-US",
+  "title": "Pumpkin Pie Bars Recipe",
+  "ingredients": [
+    "1 ¾ cups old-fashioned rolled oats",
+    "¾ cup all-purpose flour (use gluten-free, if needed)",
+    "½ cup packed brown sugar",
+    "½ teaspoon baking powder",
+    "¼ teaspoon pumpkin pie spice",
+    "¼ teaspoon fine salt",
+    "½ teaspoon pure vanilla extract",
+    "½ cup (8 tablespoons) unsalted butter, softened to room temperature and cut into pieces",
+    "1 (15-ounce) can pumpkin puree",
+    "½ cup packed brown sugar",
+    "2 large eggs",
+    "2 teaspoons pumpkin pie spice",
+    "1 teaspoon pure vanilla extract",
+    "¼ cup milk of choice"
+  ],
+  "ingredient_groups": [
+    {
+      "ingredients": [
+        "1 ¾ cups old-fashioned rolled oats",
+        "¾ cup all-purpose flour (use gluten-free, if needed)",
+        "½ cup packed brown sugar",
+        "½ teaspoon baking powder",
+        "¼ teaspoon pumpkin pie spice",
+        "¼ teaspoon fine salt",
+        "½ teaspoon pure vanilla extract",
+        "½ cup (8 tablespoons) unsalted butter, softened to room temperature and cut into pieces"
+      ],
+      "purpose": "For the Crust:"
+    },
+    {
+      "ingredients": [
+        "1 (15-ounce) can pumpkin puree",
+        "½ cup packed brown sugar",
+        "2 large eggs",
+        "2 teaspoons pumpkin pie spice",
+        "1 teaspoon pure vanilla extract",
+        "¼ cup milk of choice"
+      ],
+      "purpose": "For the Filling:"
+    }
+  ],
+  "instructions_list": [
+    "Preheat the oven to 350°F. Mist an 8×8 or 9×9 baking dish with cooking spray or line with parchment paper; set aside.",
+    "To a mixing bowl, add the oats, flour, ½ cup brown sugar, baking powder, pumpkin pie spice, salt, and vanilla. Stir together, then add the butter pieces. Using a pastry blender or two knives, cut the butter into the mixture until a crumbly dough forms. (NOTE: the dough should stick together when you pinch it between your fingers).",
+    "Set aside 1½ cups of the mixture for the crumble topping. Pour the rest of the mixture into the bottom of the prepared baking dish. Press the mixture evenly and very firmly into the bottom of the pan.",
+    "In another bowl, combine the pumpkin, brown sugar, eggs, pumpkin pie spice, vanilla, and milk. Whisk together until smooth.",
+    "Pour the pumpkin filling over the crust layering, spreading it out evenly with a spatula.",
+    "Sprinkle the reserved crumble topping evenly over top.",
+    "Bake until the center is set and the topping is slightly golden brown, 35-40 minutes.",
+    "Remove from the oven and cool completely before cutting into 16 equal bars.",
+    "Store in an airtight container in the fridge for up to 5 days."
+  ],
+  "category": "Dessert",
+  "yields": "16 servings",
+  "description": "The best pumpkin pie bars you could serve, this recipe is fast to make and always a hit. This sweet and spiced pumpkin dessert has the perfect ratio of crust to filling, with an oat cookie-like base, soft sweet pumpkin layer, and crumbly streusel-type topping. Great for potlucks and an easy fall dessert.",
+  "total_time": 50,
+  "cook_time": 35,
+  "prep_time": 15,
+  "ratings": 5.0,
+  "ratings_count": 3,
+  "nutrients": {
+    "servingSize": "1 bar",
+    "calories": "184 calories",
+    "fatContent": "7 g",
+    "saturatedFatContent": "4 g",
+    "carbohydrateContent": "27 g",
+    "sugarContent": "14 g",
+    "proteinContent": "3 g",
+    "sodiumContent": "100 g",
+    "fiberContent": "2 g",
+    "cholesterolContent": "33 mg"
+  },
+  "image": "https://therealfooddietitians.com/wp-content/uploads/2018/10/Pumpkin-Pie-Bars-4-225x225.jpg",
+  "keywords": [
+    "Pumpkin Pie Bars",
+    "Pumpkin Pie",
+    "Paleo Pumpkin Pie"
+  ]
+}
