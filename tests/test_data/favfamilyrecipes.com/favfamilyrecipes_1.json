@@ -1,0 +1,46 @@
+{
+  "author": "Erica Walker",
+  "canonical_url": "https://www.favfamilyrecipes.com/brunede-kartofler-caramelizedbrowned-potatoes/",
+  "site_name": "Favorite Family Recipes",
+  "host": "favfamilyrecipes.com",
+  "language": "en-US",
+  "title": "Brunede Kartofler (Danish Caramelized Potatoes)",
+  "ingredients": [
+    "2 cans small new potatoes (you can find these in a can with canned veggies)",
+    "1/4 cup sugar",
+    "1/4 cup butter"
+  ],
+  "instructions_list": [
+    "Drain potatoes and pat dry.",
+    "In a large skillet, cook the sugar on medium-low heat until completely melted. Try not to stir unless necessary to prevent burning. When melted and slightly darkened around the edges, add the butter and stir until it becomes kind of a syrupy mixture.",
+    "Add the potatoes (if the mixture starts to stiffen and form lumps, turn the heat up and it will melt again).Moving the skillet around, gently cover each potato in the mixture, continuing to cook for about 6-8 minutes. If you want more of a caramelized crust, you can raise the heat a little and cook longer."
+  ],
+  "category": "Side Dish",
+  "yields": "4 servings",
+  "description": "Danish Brunede Kartofler, also known as caramelized brown potatoes, are a great side dish to any meal! They are a small potato with a sweet caramelized coating.",
+  "total_time": 20,
+  "cook_time": 15,
+  "prep_time": 5,
+  "cuisine": "Danish",
+  "ratings": 5.0,
+  "ratings_count": 19,
+  "nutrients": {
+    "servingSize": "1 serving",
+    "calories": "394 kcal",
+    "fatContent": "12 g",
+    "saturatedFatContent": "7 g",
+    "carbohydrateContent": "67 g",
+    "sugarContent": "15 g",
+    "proteinContent": "7 g",
+    "sodiumContent": "118 mg",
+    "fiberContent": "6 g",
+    "cholesterolContent": "31 mg"
+  },
+  "image": "https://www.favfamilyrecipes.com/wp-content/uploads/2018/10/Danish-Brunede-Kartofler-–-Caramelized-Potatoes-2.jpg",
+  "keywords": [
+    "Brunede Kartofler",
+    "Potatoes",
+    "Side",
+    "Side Dish"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "author": "Erica Walker",
+  "canonical_url": "https://www.favfamilyrecipes.com/ris-la-mande-danish-rice-pudding/",
+  "site_name": "Favorite Family Recipes",
+  "host": "favfamilyrecipes.com",
+  "language": "en-US",
+  "title": "Risalamande (Danish Christmas Rice Pudding)",
+  "ingredients": [
+    "1/2 cup Arborio rice (it MUST be this kind of rice)",
+    "4 cups whole milk",
+    "3 Tablespoons vanilla sugar (do NOT use vanilla extract...this can be tricky to find, see above)",
+    "3 Tablespoons sugar",
+    "1 cup almonds (finely chopped using knife)",
+    "2 1/4 cups whipping cream (whipped)",
+    "2 cups frozen raspberries",
+    "2 Tablespoons water",
+    "1/4 cup sugar",
+    "1 Tablespoon cornstarch",
+    "2 Tablespoons water"
+  ],
+  "ingredient_groups": [
+    {
+      "ingredients": [
+        "1/2 cup Arborio rice (it MUST be this kind of rice)",
+        "4 cups whole milk",
+        "3 Tablespoons vanilla sugar (do NOT use vanilla extract...this can be tricky to find, see above)",
+        "3 Tablespoons sugar",
+        "1 cup almonds (finely chopped using knife)",
+        "2 1/4 cups whipping cream (whipped)"
+      ],
+      "purpose": "For the rice pudding:"
+    },
+    {
+      "ingredients": [
+        "2 cups frozen raspberries",
+        "2 Tablespoons water",
+        "1/4 cup sugar",
+        "1 Tablespoon cornstarch",
+        "2 Tablespoons water"
+      ],
+      "purpose": "For the sauce:"
+    }
+  ],
+  "instructions_list": [
+    "RICE PUDDING:",
+    "Bring milk to a simmer slowly in a large pot over low heat.",
+    "Add rice, keep simmering until rice is tender, stir every 3 min or so to prevent rice and/or milk burning at the bottom. This step takes approx 40 minutes.",
+    "While the rice is simmering you can make the raspberry sauce and chop the almonds.",
+    "When rice is tender and has thickened, remove from heat and let it cool slightly.",
+    "Add vanilla sugar, sugar and almonds.",
+    "Fold in whipped cream.",
+    "Keep warm or chill before serving (we actually like the rice pudding warm... but some like it chilled. Either way works).",
+    "Serve with raspberry sauce or warm cherry sauce.",
+    "SAUCE:",
+    "In medium sauce pan, place frozen raspberries and 2 Tablespoons of water, heat until thawed, add sugar and stir. Let simmer for approx. 3-5 minutes.",
+    "Strain seeds (catching the juices/pulp over a bowl), discard seeds and put juices back in the sauce pan.",
+    "Mix cornstarch with water and add to the sauce SLOWLY to thicken. You probably won't need all the mixture. This step can be omitted if you want a more natural and thinner sauce.",
+    "Serve sauce warm."
+  ],
+  "category": "Dessert",
+  "yields": "6 servings",
+  "description": "I love the tradition of serving Ris a La Mande (Danish Rice Pudding) on Little Christmas Eve! A delicious, traditional dessert if you have Danish roots!",
+  "total_time": 50,
+  "cook_time": 45,
+  "prep_time": 5,
+  "cuisine": "Danish",
+  "ratings": 5.0,
+  "ratings_count": 10,
+  "nutrients": {
+    "servingSize": "1 serving",
+    "calories": "690 kcal",
+    "fatContent": "36 g",
+    "saturatedFatContent": "11 g",
+    "carbohydrateContent": "79 g",
+    "sugarContent": "38 g",
+    "proteinContent": "19 g",
+    "sodiumContent": "106 mg",
+    "fiberContent": "11 g",
+    "cholesterolContent": "49 mg"
+  },
+  "image": "https://www.favfamilyrecipes.com/wp-content/uploads/2022/11/Risalamande-Danish-recipe.jpg",
+  "keywords": [
+    "Rice Pudding"
+  ]
+}
