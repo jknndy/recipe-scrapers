@@ -1,0 +1,53 @@
+{
+  "author": "Jessica Vogl",
+  "canonical_url": "https://www.thisjess.com/sourdough-discard-pizza-dough/",
+  "site_name": "This Jess Cooks",
+  "host": "thisjess.com",
+  "language": "en-US",
+  "title": "Sourdough Discard Pizza Dough",
+  "ingredients": [
+    "3 cups bread flour",
+    "1 ¼ teaspoons instant dry yeast",
+    "2 teaspoons kosher salt",
+    "1 teaspoon granulated sugar",
+    "200 grams (about ¾ cup) sourdough discard (unfed, at room temperature)",
+    "¾ cup warm water",
+    "2 Tablespoons olive oil",
+    "semolina flour (for dusting)"
+  ],
+  "instructions_list": [
+    "In the bowl of a stand mixer fitted with a dough hook*, combine bread flour, yeast, salt and granulated sugar. Mix to combine.",
+    "Add sourdough discard. With the mixer on low speed, slowly pour in 3/4 cup of warm water and the olive oil. Increase speed to medium until a shaggy dough forms and wraps around the dough hook. If needed, add more flour or water (1 Tablespoon at a time) to reach your desired consistency.",
+    "Transfer the dough to a lightly floured surface and knead for 2-3 minutes until a soft, smooth dough forms. The dough should not be sticky. Transfer the dough to a large oiled bowl and cover with plastic wrap. Let rise for 1 hour, or until doubled in size.",
+    "Preheat oven to 450°F. Lightly dust two baking sheets with semolina flour and set aside**.",
+    "Place the dough on a lightly floured surface and divide in two equal-sized pieces. Shape each into a round and place on the prepared baking sheets. Cover with plastic wrap and let rest for 10 minutes.",
+    "Gently press the dough to shape your crust into the desired shape and thickness. If you find the dough bouncing back and not holding shape, cover with a clean kitchen towel and let the dough rest for 10 minutes, then shape again. Add your favorite toppings, drizzle the curst with olive oil (optional) and bake for 20-30 minutes (see notes)."
+  ],
+  "category": "Ingredient,Main Course",
+  "yields": "4 servings",
+  "description": "A delicious recipe for a thin crust Sourdough Discard Pizza Dough, perfect for topping with your favorite ingredients for pizza night!",
+  "total_time": 90,
+  "prep_time": 20,
+  "cuisine": "Italian",
+  "ratings": 4.9,
+  "ratings_count": 56,
+  "nutrients": {
+    "servingSize": "1 serving",
+    "calories": "462 kcal",
+    "fatContent": "9 g",
+    "saturatedFatContent": "1 g",
+    "unsaturatedFatContent": "6 g",
+    "carbohydrateContent": "80 g",
+    "sugarContent": "1 g",
+    "proteinContent": "14 g",
+    "sodiumContent": "1170 mg",
+    "fiberContent": "4 g"
+  },
+  "image": "https://www.thisjess.com/wp-content/uploads/2023/01/Sourdough-Discard-Pizza-Dough-Pressed.jpg",
+  "keywords": [
+    "pizza",
+    "pizza dough",
+    "sourdough",
+    "sourdough discard"
+  ]
+}
