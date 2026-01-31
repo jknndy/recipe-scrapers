@@ -77,6 +77,7 @@ from .asweetpeachef import ASweetPeaChef
 from .atelierdeschefs import AtelierDesChefs
 from .aubreyskitchen import AubreysKitchen
 from .averiecooks import AverieCooks
+from .bakeeatrepeat import BakeEatRepeat
 from .bakels import Bakels
 from .bakerbynature import BakerByNature
 from .bakewithzoha import BakeWithZoha
@@ -99,6 +100,7 @@ from .biggerbolderbaking import BiggerBolderBaking
 from .bigoven import BigOven
 from .billyparisi import BillyParisi
 from .bitsofcarey import BitsOfCarey
+from .blessthismessplease import BlessThisMessPlease
 from .blueapron import BlueApron
 from .bluejeanchef import BlueJeanChef
 from .bodybuilding import Bodybuilding
@@ -113,6 +115,7 @@ from .budgetbytes import BudgetBytes
 from .cafedelites import CafeDelites
 from .caioflorentina import CaioFlorentina
 from .cakemehometonight import CakeMeHomeTonight
+from .cakewhiz import CakeWhiz
 from .cambreabakes import CambreaBakes
 from .carlsbadcravings import CarlsBadCravings
 from .carriesexperimentalkitchen import CarriesExperimentalKitchen
@@ -162,6 +165,7 @@ from .dashfordinner import DashForDinner
 from .davidlebovitz import DavidLebovitz
 from .deliciouslysprinkled import DeliciouslySprinkled
 from .delish import Delish
+from .delscookingtwist import DelsCookingTwist
 from .dinneratthezoo import DinnerAtTheZoo
 from .dinnerthendessert import DinnerThenDessert
 from .dishnz import Dishnz
@@ -287,6 +291,7 @@ from .joshuaweissman import JoshuaWeissman
 from .jow import Jow
 from .joyfoodsunshine import Joyfoodsunshine
 from .joythebaker import JoyTheBaker
+from .juliasalbum import JuliasAlbum
 from .juliegoodwin import JulieGoodwin
 from .jumbo import Jumbo
 from .justalittlebitofbacon import JustALittleBitOfBacon
@@ -333,6 +338,7 @@ from .lidiasitaly import LidiasItaly
 from .lifestyleofafoodie import LifestyleOfAFoodie
 from .littleferrarokitchen import LittleFerraroKitchen
 from .littlespicejar import LittleSpiceJar
+from .littlespoonfarm import LittleSpoonFarm
 from .littlesunnykitchen import LittleSunnyKitchen
 from .livelytable import LivelyTable
 from .lmld import Lmld
@@ -367,6 +373,7 @@ from .mobkitchen import MobKitchen
 from .modernhoney import ModernHoney
 from .momontimeout import MomOnTimeout
 from .momswithcrockpots import MomsWithCrockPots
+from .moscatomom import MoscatoMom
 from .motherthyme import MotherThyme
 from .moulinex import Moulinex
 from .mundodereceitasbimby import MundoDeReceitasBimby
@@ -411,6 +418,7 @@ from .paleorunningmomma import PaleoRunningMomma
 from .panelinha import Panelinha
 from .paninihappy import PaniniHappy
 from .panlasangpinoy import PanlasangPinoy
+from .pastificiosorrentino import PastificioSorrentino
 from .pauladeen import PaulaDeen
 from .peelwithzeal import PeelWithZeal
 from .persnicketyplates import PersnicketyPlates
@@ -422,6 +430,7 @@ from .pinchofyum import PinchOfYum
 from .pingodoce import PingoDoce
 from .pinkowlkitchen import PinkOwlKitchen
 from .platingpixels import PlatingPixels
+from .platingsandpairings import PlatingsAndPairings
 from .plowingthroughlife import PlowingThroughLife
 from .polishfoodies import PolishFoodies
 from .poppycooks import PoppyCooks
@@ -507,6 +516,7 @@ from .streetkitchen import StreetKitchen
 from .strongrfastr import StrongrFastr
 from .sudachirecipes import SudachiRecipes
 from .sugarhero import SugarHero
+from .sugarmaplefarmhouse import SugarMapleFarmhouse
 from .sugarspunrun import SugarSpunRun
 from .sunbasket import SunBasket
 from .sundpaabudget import SundPaaBudget
@@ -532,7 +542,9 @@ from .thebigmansworld import TheBigMansWorld
 from .theclevercarrot import TheCleverCarrot
 from .thecookierookie import TheCookieRookie
 from .thecookingguy import TheCookingGuy
+from .thecountrycook import TheCountryCook
 from .thefirstmess import TheFirstMess
+from .thefoodcharlatan import TheFoodCharlatan
 from .thefoodietakesflight import TheFoodieTakesFlight
 from .theglutenfreeaustrian import TheGlutenFreeAustrian
 from .thehappyfoodie import TheHappyFoodie
@@ -655,6 +667,7 @@ SCRAPERS = {
     AtelierDesChefs.host(): AtelierDesChefs,
     AubreysKitchen.host(): AubreysKitchen,
     AverieCooks.host(): AverieCooks,
+    BakeEatRepeat.host(): BakeEatRepeat,
     Bakels.host(): Bakels,
     Bakels.host(domain="co.uk"): Bakels,
     BakerByNature.host(): BakerByNature,
@@ -679,6 +692,7 @@ SCRAPERS = {
     BigOven.host(): BigOven,
     BillyParisi.host(): BillyParisi,
     BitsOfCarey.host(): BitsOfCarey,
+    BlessThisMessPlease.host(): BlessThisMessPlease,
     BlueApron.host(): BlueApron,
     BlueJeanChef.host(): BlueJeanChef,
     Bodybuilding.host(): Bodybuilding,
@@ -693,6 +707,7 @@ SCRAPERS = {
     CafeDelites.host(): CafeDelites,
     CaioFlorentina.host(): CaioFlorentina,
     CakeMeHomeTonight.host(): CakeMeHomeTonight,
+    CakeWhiz.host(): CakeWhiz,
     CambreaBakes.host(): CambreaBakes,
     CarlsBadCravings.host(): CarlsBadCravings,
     CarriesExperimentalKitchen.host(): CarriesExperimentalKitchen,
@@ -742,6 +757,7 @@ SCRAPERS = {
     DavidLebovitz.host(): DavidLebovitz,
     DeliciouslySprinkled.host(): DeliciouslySprinkled,
     Delish.host(): Delish,
+    DelsCookingTwist.host(): DelsCookingTwist,
     DinnerAtTheZoo.host(): DinnerAtTheZoo,
     DinnerThenDessert.host(): DinnerThenDessert,
     Dishnz.host(): Dishnz,
@@ -887,6 +903,7 @@ SCRAPERS = {
     Jow.host(): Jow,
     Joyfoodsunshine.host(): Joyfoodsunshine,
     JoyTheBaker.host(): JoyTheBaker,
+    JuliasAlbum.host(): JuliasAlbum,
     JulieGoodwin.host(): JulieGoodwin,
     Jumbo.host(): Jumbo,
     JustALittleBitOfBacon.host(): JustALittleBitOfBacon,
@@ -934,6 +951,7 @@ SCRAPERS = {
     LifestyleOfAFoodie.host(): LifestyleOfAFoodie,
     LittleFerraroKitchen.host(): LittleFerraroKitchen,
     LittleSpiceJar.host(): LittleSpiceJar,
+    LittleSpoonFarm.host(): LittleSpoonFarm,
     LittleSunnyKitchen.host(): LittleSunnyKitchen,
     LivelyTable.host(): LivelyTable,
     Lmld.host(): Lmld,
@@ -968,6 +986,7 @@ SCRAPERS = {
     ModernHoney.host(): ModernHoney,
     MomOnTimeout.host(): MomOnTimeout,
     MomsWithCrockPots.host(): MomsWithCrockPots,
+    MoscatoMom.host(): MoscatoMom,
     MotherThyme.host(): MotherThyme,
     Moulinex.host(): Moulinex,
     MundoDeReceitasBimby.host(): MundoDeReceitasBimby,
@@ -1012,6 +1031,7 @@ SCRAPERS = {
     Panelinha.host(): Panelinha,
     PaniniHappy.host(): PaniniHappy,
     PanlasangPinoy.host(): PanlasangPinoy,
+    PastificioSorrentino.host(): PastificioSorrentino,
     PaulaDeen.host(): PaulaDeen,
     PeelWithZeal.host(): PeelWithZeal,
     PersnicketyPlates.host(): PersnicketyPlates,
@@ -1023,6 +1043,7 @@ SCRAPERS = {
     PingoDoce.host(): PingoDoce,
     PinkOwlKitchen.host(): PinkOwlKitchen,
     PlatingPixels.host(): PlatingPixels,
+    PlatingsAndPairings.host(): PlatingsAndPairings,
     PlowingThroughLife.host(): PlowingThroughLife,
     PolishFoodies.host(): PolishFoodies,
     PoppyCooks.host(): PoppyCooks,
@@ -1108,6 +1129,7 @@ SCRAPERS = {
     StrongrFastr.host(): StrongrFastr,
     SudachiRecipes.host(): SudachiRecipes,
     SugarHero.host(): SugarHero,
+    SugarMapleFarmhouse.host(): SugarMapleFarmhouse,
     SugarSpunRun.host(): SugarSpunRun,
     SunBasket.host(): SunBasket,
     SundPaaBudget.host(): SundPaaBudget,
@@ -1133,7 +1155,9 @@ SCRAPERS = {
     TheCleverCarrot.host(): TheCleverCarrot,
     TheCookieRookie.host(): TheCookieRookie,
     TheCookingGuy.host(): TheCookingGuy,
+    TheCountryCook.host(): TheCountryCook,
     TheFirstMess.host(): TheFirstMess,
+    TheFoodCharlatan.host(): TheFoodCharlatan,
     TheFoodieTakesFlight.host(): TheFoodieTakesFlight,
     TheGlutenFreeAustrian.host(): TheGlutenFreeAustrian,
     TheHappyFoodie.host(): TheHappyFoodie,
