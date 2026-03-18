@@ -443,6 +443,7 @@ from .plowingthroughlife import PlowingThroughLife
 from .polishfoodies import PolishFoodies
 from .poppycooks import PoppyCooks
 from .popsugar import PopSugar
+from .postpunkkitchen import PostPunkKitchen
 from .potatorolls import PotatoRolls
 from .practicalselfreliance import PracticalSelfReliance
 from .preppykitchen import PreppyKitchen
@@ -1066,6 +1067,7 @@ SCRAPERS = {
     PolishFoodies.host(): PolishFoodies,
     PoppyCooks.host(): PoppyCooks,
     PopSugar.host(): PopSugar,
+    PostPunkKitchen.host(): PostPunkKitchen,
     PotatoRolls.host(): PotatoRolls,
     PracticalSelfReliance.host(): PracticalSelfReliance,
     PreppyKitchen.host(): PreppyKitchen,
