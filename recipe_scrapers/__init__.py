@@ -181,6 +181,7 @@ from .dishnz import Dishnz
 from .dobruchutaktualitysk import DobruChutAktualitySK
 from .domesticateme import DomesticateMe
 from .donalskehan import DonalSkehan
+from .donnahay import DonnaHay
 from .downshiftology import Downshiftology
 from .dr import Dr
 from .drinkoteket import Drinkoteket
@@ -790,6 +791,7 @@ SCRAPERS = {
     DobruChutAktualitySK.host(): DobruChutAktualitySK,
     DomesticateMe.host(): DomesticateMe,
     DonalSkehan.host(): DonalSkehan,
+    DonnaHay.host(): DonnaHay,
     Downshiftology.host(): Downshiftology,
     Dr.host(): Dr,
     Drinkoteket.host(): Drinkoteket,
