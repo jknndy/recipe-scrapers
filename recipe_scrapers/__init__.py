@@ -379,6 +379,7 @@ from .meljoulwan import Meljoulwan
 from .mellisaknorris import MellisaKNorris
 from .melloschourico import MellosChourico
 from .melskitchencafe import MelsKitchenCafe
+from .mexicanplease import MexicanPlease
 from .migusto import Migusto
 from .miljuschka import Miljuschka
 from .mindmegette import Mindmegette
@@ -1016,6 +1017,7 @@ SCRAPERS = {
     MellisaKNorris.host(): MellisaKNorris,
     MellosChourico.host(): MellosChourico,
     MelsKitchenCafe.host(): MelsKitchenCafe,
+    MexicanPlease.host(): MexicanPlease,
     Migusto.host(): Migusto,
     Miljuschka.host(): Miljuschka,
     Mindmegette.host(): Mindmegette,
