@@ -6,9 +6,7 @@
   "language": "en",
   "title": "Vegetarian Spinach Pumpkin Lasagna",
   "ingredients": [
-    "For the noodles:",
     "10 lasagna noodles",
-    "For the ricotta mixture:",
     "1/2 tablespoon olive oil",
     "6 ounces spinach (from 1 bag spinach)",
     "1 (15 ounce) container part skim ricotta",
@@ -16,7 +14,6 @@
     "½ teaspoon garlic powder",
     "1/2 teaspoon salt",
     "Freshly ground black pepper",
-    "For the pumpkin layer:",
     "2 (15 ounce) cans pumpkin puree",
     "½ cup milk (I like unsweetened almond milk, but any milk will work)",
     "¼ teaspoon cinnamon",
@@ -25,11 +22,55 @@
     "¼ teaspoon allspice",
     "3/4 teaspoon salt",
     "Freshly ground black pepper",
-    "For the layers:",
     "3 cups shredded mozzarella cheese, divided (approximately 12 ounces)",
     "1 cup grated parmesan cheese, divided",
-    "To garnish:",
     "Fresh chopped parsley or small sage leaves"
+  ],
+  "ingredient_groups": [
+    {
+      "ingredients": [
+        "10 lasagna noodles"
+      ],
+      "purpose": "For the noodles:"
+    },
+    {
+      "ingredients": [
+        "1/2 tablespoon olive oil",
+        "6 ounces spinach (from 1 bag spinach)",
+        "1 (15 ounce) container part skim ricotta",
+        "1 egg",
+        "½ teaspoon garlic powder",
+        "1/2 teaspoon salt",
+        "Freshly ground black pepper"
+      ],
+      "purpose": "For the ricotta mixture:"
+    },
+    {
+      "ingredients": [
+        "2 (15 ounce) cans pumpkin puree",
+        "½ cup milk (I like unsweetened almond milk, but any milk will work)",
+        "¼ teaspoon cinnamon",
+        "¼ teaspoon nutmeg",
+        "¼ teaspoon ginger",
+        "¼ teaspoon allspice",
+        "3/4 teaspoon salt",
+        "Freshly ground black pepper"
+      ],
+      "purpose": "For the pumpkin layer:"
+    },
+    {
+      "ingredients": [
+        "3 cups shredded mozzarella cheese, divided (approximately 12 ounces)",
+        "1 cup grated parmesan cheese, divided"
+      ],
+      "purpose": "For the layers:"
+    },
+    {
+      "ingredients": [
+        "Fresh chopped parsley or small sage leaves"
+      ],
+      "purpose": "To garnish:"
+    }
   ],
   "instructions_list": [
     "Preheat oven to 400 degrees F. Grease a 9x13 inch baking pan with nonstick cooking spray.",
