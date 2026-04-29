@@ -275,6 +275,7 @@ from .hellofresh import HelloFresh
 from .hersheyland import HersheyLand
 from .hilahcooking import HilahCooking
 from .hofer import Hofer
+from .hogarmania import Hogarmania
 from .homeandplate import HomeAndPlate
 from .homechef import HomeChef
 from .hostthetoast import Hostthetoast
@@ -912,6 +913,7 @@ SCRAPERS = {
     HilahCooking.host(): HilahCooking,
     Hofer.host(): Hofer,
     Hofer.host(domain="hofer.si"): Hofer,
+    Hogarmania.host(): Hogarmania,
     HomeAndPlate.host(): HomeAndPlate,
     HomeChef.host(): HomeChef,
     Hostthetoast.host(): Hostthetoast,
