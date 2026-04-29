@@ -390,6 +390,7 @@ from .misya import Misya
 from .mob import Mob
 from .mobkitchen import MobKitchen
 from .modernhoney import ModernHoney
+from .mollybaz import MollyBaz
 from .momontimeout import MomOnTimeout
 from .momswithcrockpots import MomsWithCrockPots
 from .moscatomom import MoscatoMom
@@ -1029,6 +1030,7 @@ SCRAPERS = {
     Mob.host(): Mob,
     MobKitchen.host(): MobKitchen,
     ModernHoney.host(): ModernHoney,
+    MollyBaz.host(): MollyBaz,
     MomOnTimeout.host(): MomOnTimeout,
     MomsWithCrockPots.host(): MomsWithCrockPots,
     MoscatoMom.host(): MoscatoMom,
