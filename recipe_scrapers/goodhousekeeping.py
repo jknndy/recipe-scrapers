@@ -1,44 +1,29 @@
 import re
 import functools
-
 from ._abstract import AbstractScraper
-from ._grouping_utils import group_ingredients
 from ._utils import normalize_string
 
 
 class GoodHousekeeping(AbstractScraper):
+
     @classmethod
     def host(cls):
         return "goodhousekeeping.com"
 
-    def ingredient_groups(self):
-        return group_ingredients(
-            self.ingredients(),
-            self.soup,
-            ".ingredients-body h3",
-            ".ingredient-lists li",
-        )
-
     def instructions(self):
-        directions = self.soup.find(
-            "ul",
-            class_="directions",
-        )
-
+        directions = self.soup.find("ul", class_="directions")
         methods = [
             directions.find_all("p"),
             directions.find("li", recursive=False).find_all("li"),
         ]
-
         for m in methods:
             if len(m) != 0:
                 instructions = m
                 break
-
         return "\n".join(
             [
                 re.sub(
-                    r"Step \d+", "", normalize_string(instruction.get_text())
+                    "Step \\d+", "", normalize_string(instruction.get_text())
                 ).strip()
                 for instruction in instructions
             ]

@@ -1,9 +1,9 @@
 from ._abstract import AbstractScraper
-from ._grouping_utils import group_ingredients
 from ._utils import get_equipment, normalize_string
 
 
 class Unsophisticook(AbstractScraper):
+
     @classmethod
     def host(cls):
         return "unsophisticook.com"
@@ -16,11 +16,3 @@ class Unsophisticook(AbstractScraper):
             )
         ]
         return get_equipment(equipment_items)
-
-    def ingredient_groups(self):
-        return group_ingredients(
-            self.ingredients(),
-            self.soup,
-            ".mv-create-ingredients h4",
-            ".mv-create-ingredients li",
-        )

@@ -54,22 +54,62 @@ DEFAULT_GROUPINGS: list[tuple[str, list[str], list[str]]] = [
         "wprm",
         [
             ".wprm-recipe-ingredient-group h4",
+            ".wprm-recipe-ingredient-group h5",
             ".wprm-recipe-group-name",
+            ".wprm-recipe-ingredient-group-name",
+            "h4.wprm-recipe-group-name",
+            "h4.wprm-recipe-ingredient-group-name",
+            "div.wprm-recipe-ingredient-group-name",
         ],
         [
             ".wprm-recipe-ingredient",
+            "li.wprm-recipe-ingredient",
             ".wprm-recipe-ingredients li",
         ],
     ),
     (
         "tasty",
         [
+            ".tasty-recipes-ingredients-body h4",
             ".tasty-recipes-ingredients-body p strong",
+            ".tasty-recipes-ingredients-body strong",
             ".tasty-recipes-ingredients h4",
+            ".tasty-recipes-ingredients p",
         ],
         [
+            ".tasty-recipes-ingredients-body li",
             ".tasty-recipes-ingredients-body ul li",
+            ".tasty-recipes-ingredients li",
             ".tasty-recipes-ingredients ul li",
+        ],
+    ),
+    (
+        "mv_create",
+        [
+            ".mv-create-ingredients h4",
+        ],
+        [
+            ".mv-create-ingredients ul li",
+            ".mv-create-ingredients li",
+        ],
+    ),
+    (
+        "wpzoom_rcb",
+        [
+            ".ingredient-item-group-title",
+        ],
+        [
+            ".ingredient-item:not(.ingredient-item-group)",
+            ".wpzoom-rcb-ingredient-name",
+        ],
+    ),
+    (
+        "hearst",
+        [
+            ".ingredients-body h3",
+        ],
+        [
+            ".ingredient-lists li",
         ],
     ),
 ]
