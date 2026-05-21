@@ -17,6 +17,33 @@
     "1 egg",
     "15g (1 tablespoon) whole milk"
   ],
+  "ingredient_groups": [
+    {
+      "ingredients": [
+        "115g active sourdough starter, 100% hydration",
+        "36g sugar",
+        "10g kosher salt",
+        "29g (2 tablespoons) unsalted butter, melted",
+        "240g whole milk, cold",
+        "423g unbleached all-purpose flour"
+      ],
+      "purpose": "Sourdough Croissant Dough"
+    },
+    {
+      "ingredients": [
+        "227g (1 cup) 82% fat (European-style) unsalted butter, cold",
+        "8g (1 tablespoon) unbleached all-purpose flour"
+      ],
+      "purpose": "Butter Block"
+    },
+    {
+      "ingredients": [
+        "1 egg",
+        "15g (1 tablespoon) whole milk"
+      ],
+      "purpose": "Egg Wash"
+    }
+  ],
   "instructions_list": [
     "Feed starter several hours before mixing dough and allow it to peak.",
     "Sourdough Croissant Dough:",

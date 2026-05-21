@@ -18,6 +18,30 @@
     "2 Tbsp. olive oil, extra virgin and cold pressed",
     "1 Tbsp. red wine vinegar"
   ],
+  "ingredient_groups": [
+    {
+      "ingredients": [
+        "4 6oz. swordfish steaks",
+        "1 tsp. Kosher salt",
+        "¼ tsp. freshly ground black pepper",
+        "2 Tbsp. olive oil, extra virgin and cold pressed"
+      ],
+      "purpose": "For the Swordfish:"
+    },
+    {
+      "ingredients": [
+        "1/2 cup Castelvetrano olives, pitted and quartered",
+        "1/2 cup Kalamata olives, pitted and quartered",
+        "2 medium Roma tomatoes, diced",
+        "2 Tbsp. capers, drained",
+        "2 Tbsp. pine nuts, toasted",
+        "2 Tbsp. basil, chopped (for garnish)",
+        "2 Tbsp. olive oil, extra virgin and cold pressed",
+        "1 Tbsp. red wine vinegar"
+      ],
+      "purpose": "For the Salsa:"
+    }
+  ],
   "instructions_list": [
     "Pat the swordfish steaks dry with a paper towel. Rub a little avocado oil on both sides of each steak and season with salt and pepper.",
     "Make the salsa so that it is ready to go, prior to cooking the steaks.",

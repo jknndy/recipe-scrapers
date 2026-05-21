@@ -20,6 +20,36 @@
     "2 tsp corn flour⁣",
     "2 tbsp water⁣"
   ],
+  "ingredient_groups": [
+    {
+      "ingredients": [
+        "180g boneless chicken, diced (marinate with 2 tsp light soya sauce, 1/2 tsp sugar and pinch of pepper for 30mins)⁣",
+        "1 thumb sized ginger, thinly sliced⁣",
+        "Few sprigs of spring onion⁣",
+        "1/2 tsp minced garlic⁣",
+        "1 tbsp cooking oil⁣",
+        "2 tsp shaoxing wine⁣"
+      ],
+      "purpose": null
+    },
+    {
+      "ingredients": [
+        "1 tbsp oyster sauce⁣",
+        "2 tbsp dark soya sauce⁣",
+        "125ml water⁣",
+        "1 tsp sugar⁣",
+        "1 tsp sesame oil⁣"
+      ],
+      "purpose": "Seasoning:⁣"
+    },
+    {
+      "ingredients": [
+        "2 tsp corn flour⁣",
+        "2 tbsp water⁣"
+      ],
+      "purpose": "Sauce thickening:⁣"
+    }
+  ],
   "instructions_list": [
     "Heat up oil and saute garlics, white parts of spring onion and ginger till fragrant.⁣",
     "Add in marinated chicken with the light soya sauce and mix well.⁣",

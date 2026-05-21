@@ -19,6 +19,30 @@
     "1 cup (250 g) good-quality store-bought toum (Lebanese garlic sauce) (see the FAQs above for the recipe)",
     "Lemon wedges"
   ],
+  "ingredient_groups": [
+    {
+      "ingredients": [
+        "1 tbsp dried oregano",
+        "1 tbsp sweet paprika",
+        "1 tbsp brown sugar (can be substituted with honey)",
+        "1 tbsp freshly minced garlic",
+        "1 tbsp red wine vinegar",
+        "2 tsp sea salt flakes",
+        "2 tbsp lemon juice",
+        "¼ cup (60 ml) extra-virgin olive oil",
+        "1.2–1.8 kg (2 lb 10 oz–4 lb) whole chicken, butterflied (see note 1)"
+      ],
+      "purpose": "CHICKEN"
+    },
+    {
+      "ingredients": [
+        "Crispy Oven Fries",
+        "1 cup (250 g) good-quality store-bought toum (Lebanese garlic sauce) (see the FAQs above for the recipe)",
+        "Lemon wedges"
+      ],
+      "purpose": "TO SERVE"
+    }
+  ],
   "instructions_list": [
     "Preheat the oven to 220°C (425°F) (200°C/400°F fan-forced).",
     "In a small bowl, mix together the oregano, sweet paprika, brown sugar, garlic, red wine vinegar, salt, lemon juice and extra-virgin olive oil.",
