@@ -222,7 +222,7 @@ class BestImagePlugin(PluginInterface):
         if url.startswith("//"):
             return "https:" + url
         if not url.startswith(("http://", "https://")):
-            url = "https://" + url.lstrip("/")
+            url = "http://" + url.lstrip("/")
         return url
 
     @classmethod
