@@ -1,5 +1,6 @@
 import inspect
 from collections import OrderedDict
+from functools import cached_property
 from typing import Optional
 from urllib.parse import urljoin
 
@@ -30,20 +31,25 @@ class AbstractScraper:
         self.url = url
         self.soup = BeautifulSoup(self.page_data, "html.parser")
         self.opengraph = self._opengraph_cls(self.soup)
-        self.schema = self._schema_cls(self.page_data)
         self.best_image_selection = (
             settings.BEST_IMAGE_SELECTION if best_image is None else bool(best_image)
         )
 
         # attach the plugins as instructed in settings.PLUGINS
+        # Discover methods on the class (not the instance) so cached properties
+        # such as schema are not materialized during plugin setup.
         if not hasattr(self.__class__, "plugins_initialized"):
-            for name, _ in inspect.getmembers(self, inspect.ismethod):
+            for name, _ in inspect.getmembers(self.__class__, inspect.isfunction):
                 current_method = getattr(self.__class__, name)
                 for plugin in reversed(settings.PLUGINS):
                     if plugin.should_run(self.host(), name):
                         current_method = plugin.run(current_method)
                 setattr(self.__class__, name, current_method)
             setattr(self.__class__, "plugins_initialized", True)
+
+    @cached_property
+    def schema(self):
+        return self._schema_cls(self.page_data)
 
     def author(self):
         """Author of the recipe."""
@@ -194,7 +200,8 @@ class AbstractScraper:
             method
             for method in dir(self)
             if callable(getattr(self, method))
-            if not method.startswith("_") and method not in ["soup", "links", "to_json"]
+            if not method.startswith("_")
+            and method not in ["soup", "schema", "opengraph", "links", "to_json"]
         ]
         for method in public_method_names:
             try:
