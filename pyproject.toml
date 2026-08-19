@@ -53,7 +53,7 @@ online = [
 #                 # The server auto-reloads when you change files in docs/
 docs = [
     "mkdocs >= 1.6.1",               # Core documentation generator
-    "mkdocs-material >= 9.5.48",     # Material theme for MkDocs
+    "mkdocs-material >= 9.7.7",      # Material theme for MkDocs
     "mkdocstrings >= 0.27.0",        # API documentation from docstrings
     "mkdocstrings-python >= 1.12.2", # Python handler for mkdocstrings
     "markdown-exec >= 1.10.0",       # Execute code blocks in markdown

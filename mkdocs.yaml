@@ -3,6 +3,7 @@ site_url: https://docs.recipe-scrapers.com
 site_description: Documentation for recipe-scrapers - Python package for scraping recipes data from the web
 repo_url: https://github.com/hhursev/recipe-scrapers
 repo_name: hhursev/recipe-scrapers
+edit_uri: edit/main/docs/
 
 theme:
   name: material
@@ -27,7 +28,6 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
-    - navigation.top
     - navigation.tabs
     - navigation.tabs.sticky
     - content.code.copy
@@ -55,6 +55,8 @@ nav:
     - Test Data Notice: test-data-notice.md
 
 markdown_extensions:
+  - toc:
+      permalink: true
   - admonition
   - attr_list
   - md_in_html
@@ -75,18 +77,13 @@ plugins:
       default_handler: python
       handlers:
         python:
-          paths: [tests, recipe_scrapers]
+          paths: [recipe_scrapers]
           options:
             show_source: true
             show_root_heading: true
             heading_level: 1
             show_category_heading: true
             docstring_style: google
-#            show_signature_annotations: true
-#            show_if_no_docstring: true
-#            show_root_full_path: true
-#            members: true
-#            show_private_members: true
 extra:
   social:
     - icon: fontawesome/brands/github
